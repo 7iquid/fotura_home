@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Barcode System -
+      {% block title %}Home{% endblock %}
+     </title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  </head>
+
+  <body class = "bg-indigo-800 shadow-inner">
+
+  <nav class=" bg-gray-900 p-2 flex justify-between text-white items-center ">
+      <img src="https://ureshiitech.com/img/ure.png" width="150" alt=logo>
+      <h2 class = "text-4xl font-light text-white m-0 ">BARCODE SYSTEM</h2>
+      <div>
+        
+        <a href="/" class = "hover:text-gray-600 ">Home</a>
+        <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
+        <a href="/login" class = "hover:text-gray-600 px-1">Login</a>
+        <a href="#" class = "hover:text-gray-600">About</a>
+
+      </div>
+  </nav>
+{% block content %} {% endblock %}
+
+  </body>
+</html>
