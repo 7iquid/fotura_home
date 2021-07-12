@@ -1,0 +1,53 @@
+{%extends "base.html"%}
+{% block title %} Home {% endblock title%}
+
+{% block content %}  
+<!--  Data area  -->
+<div  class = "flex justify-between p-5  space-x-5 ">
+  <!-- legft -->
+    <div class = "container rounded-lg  py-4">
+
+      <!-- table title -->
+      <h1 class= "text-4xl box text-center text-bold font-weight-700 py-2 " >Codec</h1>
+
+      <!-- data table -->
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2" for="id">ID:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-3 px-4 h-14 bg-white text-right" name = "id">
+        {{id_ko}}
+        </p>
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2" for="part_no">PART NO.:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-4 px-4 h-14 bg-white text-right" name = "part_no">
+        {{part_no }}
+        </p>
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2" for="by">By:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-4 px-4 h-14 bg-white text-right" name = "by" alt="logo">
+        {{by}}
+        </p>
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2" for="date_entry">Date Entry:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-4 px-4 h-14 bg-white text-right" name = "date_entry" alt="logo">
+        {{date_entry}}
+        </p>
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2" for="date_exit">Date Exit:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-4 px-4 h-14 bg-white text-right" name = "date_exit" alt="logo">
+        {{date_exit}}
+        </p>
+
+    </div>
+
+    <!-- right -->
+   <div class = "container mt-14" >
+    <form  action="#" method="post"  class= "items-start max-auto" >
+      <input type="text" name="barcode" placeholder="Input Barcode" class="border-2 border-white-700 w-3/4  py-3 px-4 rounded-lg shadow-2xl">
+      <input type="submit" value="Search" class="bg-blue-700 text-xl hover:bg-blue-500 text-white py-2 px-3 rounded-lg">
+    </form>
+
+      <label class="block text-gray-200 textasm text-xl font-bold mb-2 mt-2" for="img_ko">Picture:</label>
+      <p class="shadow appearance-none border-2  font-light rounded-lg w-5/6 ml-12 py-4 px-4 h-full bg-white text-right" name = "img_ko" alt="logo">
+        {{img_ko}}
+      </p>
+  </div>
+</div>   
+
+
+
+{% endblock %}  
