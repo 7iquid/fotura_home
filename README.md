@@ -18,9 +18,11 @@ python app.py
 
 project/
 |
+
 ├── templates/
 |   └── index.html
 |
+
 ├── migrations/ **
 |   └── ...
 |
