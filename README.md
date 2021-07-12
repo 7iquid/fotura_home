@@ -14,7 +14,6 @@ python app.py
 
 
 
-"""
 #Build a Flask CRUD Application with MVC Architecture
 
 project/
@@ -36,4 +35,4 @@ project/
 |
 ├── app.py
 └── config.py
-"""
+
