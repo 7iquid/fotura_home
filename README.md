@@ -16,13 +16,11 @@ python app.py
 
 #Build a Flask CRUD Application with MVC Architecture
 
-project/
+project/ 
 |
-
 ├── templates/
 |   └── index.html
 |
-
 ├── migrations/ **
 |   └── ...
 |
