@@ -3,6 +3,8 @@ from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
 import time
 from router.route_ko import simple_page
+from base64 import b64encode
+
 # import os
 
 app = Flask(__name__)
@@ -19,9 +21,11 @@ class FileContents(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	part_no = db.Column(db.String(100))
 	by = db.Column(db.String(100))
+	name_db = db.Column(db.String(100))
 	date_entry = db.Column(db.String(100))
 	date_exit = db.Column(db.String(100))
 	img_ko = db.Column(db.LargeBinary)
+	mimetype_db = db.Column(db.Text, nullable=False)
 
 
 @app.route("/" ,methods = ["GET","POST"])
@@ -40,7 +44,9 @@ def index(barcode=None):
 def upload_pic():
     if request.method == "POST":
         file = request.files['pic']
-        img = FileContents(img_ko = file.read())
+        filename = (file.filename)
+        mimetype = (file.mimetype)
+        img = FileContents(img_ko = file.read(), mimetype_db=mimetype, name_db=filename)
         db.session.add(img)
         db.session.commit()
 
@@ -50,13 +56,16 @@ def upload_pic():
 
 @app.route('/view_picture' ,methods = ["GET","POST"])
 def view_picture():
-		if request.method == "POST":
-			img = Img.query.filter_by(id=id).first()
-			if not img
-				return "no image found with this id", 404     
-        	return render_template("upload_ko.html", picture_ko = img)
-        else:
-        	return render_template("upload_ko.html")
+	if request.method == "POST":
+		id = request.form.get("id")
+		data1 = FileContents.query.filter_by(id=id).first()	
+		data = b64encode(data1.img_ko)
+		data = data.decode("UTF-8")
+
+		return render_template("upload_ko.html", data=data , mimetype=data1.mimetype_db)
+
+	else:
+		return render_template("upload_ko.html")
 
 
 
@@ -65,4 +74,4 @@ def view_picture():
 if __name__ == '__main__':
 	db.create_all()
 	# app.run(debug=True, host="192.168.1.44",port = 5000, threaded=True)
-	app.run(debug=True, host="localhost",port = 5000, threaded=True) 
+	app.run(debug=True, host="192.168.1.44",port = 5000, threaded=True) 
