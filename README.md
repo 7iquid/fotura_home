@@ -20,23 +20,23 @@ project/
 
 ├── templates/
 
-|   └── index.html
+|     └── index.html
 
 ├── migrations/ **
 
-|   └── ...
+|     └── ...
 
 ├── routes/
 
-|   └── user_bp.py
+|     └── user_bp.py
 
 ├── models/
 
-|   └── User.py
+|     └── User.py
 
 ├── controllers/
 
-|   └── UserController.py
+|     └── UserController.py
 
 ├── app.py
 
