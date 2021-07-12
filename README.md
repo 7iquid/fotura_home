@@ -3,7 +3,7 @@
 
 
 
-cd agnes
+cd flask-crud 
 
 pip install -r requirements.txt
 
