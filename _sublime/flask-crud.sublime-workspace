@@ -1,0 +1,978 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mi",
+				"mimetype"
+			],
+			[
+				"im",
+				"img_ko"
+			],
+			[
+				"f",
+				"file"
+			],
+			[
+				"m",
+				"mimetype"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"da",
+				"date_exit"
+			],
+			[
+				"b",
+				"by"
+			],
+			[
+				"s",
+				"SQLALCHEMY_DATABASE_URI"
+			],
+			[
+				"fl",
+				"flask_sqlalchemy"
+			],
+			[
+				"w-xl",
+				"max-w-3xl"
+			],
+			[
+				"rend",
+				"render_template"
+			],
+			[
+				"tim",
+				"time"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"H",
+				"HTML"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"Ta",
+				"TAILS"
+			],
+			[
+				"d",
+				"driver"
+			],
+			[
+				"de",
+				"driver"
+			],
+			[
+				"if",
+				"ifmain"
+			],
+			[
+				"excep",
+				"Exception"
+			],
+			[
+				"av",
+				"savailable"
+			],
+			[
+				"ser",
+				"Serial"
+			],
+			[
+				"p",
+				"print"
+			],
+			[
+				"ca",
+				"capture_done"
+			],
+			[
+				"LC",
+				"LCD_ko"
+			],
+			[
+				"w",
+				"Worker1"
+			],
+			[
+				"pi",
+				"Pic2"
+			],
+			[
+				"lc",
+				"LCD_ko"
+			],
+			[
+				"pa",
+				"pang_test\tuna ⟠"
+			],
+			[
+				"clas",
+				"class\tkeyword ⟠"
+			],
+			[
+				"t",
+				"Triangles"
+			],
+			[
+				"Thre",
+				"threading"
+			],
+			[
+				"super",
+				"super().__init__()\t2★ pro ⟠"
+			],
+			[
+				"fli",
+				"FlippedImage"
+			],
+			[
+				"I",
+				"ImageUpdate"
+			],
+			[
+				"Qt",
+				"QThread\t⟠"
+			],
+			[
+				"cor",
+				"corner\t⟠"
+			],
+			[
+				"fo",
+				"fourcc"
+			],
+			[
+				"data",
+				"data_3\tlist ⟠"
+			],
+			[
+				"clear",
+				"clear_data()\tfunction ⟠"
+			],
+			[
+				"dat",
+				"data_4\tlist ⟠"
+			],
+			[
+				"cl",
+				"clear()\tfunction ⟠"
+			],
+			[
+				"to",
+				"total_vat"
+			],
+			[
+				"total",
+				"total_vat\tfloat | int | str ⟠"
+			],
+			[
+				"To",
+				"total"
+			],
+			[
+				"car",
+				"cart_list"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"F",
+				"Fried\t⟠"
+			],
+			[
+				"com",
+				"Combo_Meal"
+			],
+			[
+				"e",
+				"elif"
+			],
+			[
+				"mai",
+				"Main_Meal"
+			],
+			[
+				"white",
+				"white\t⟠"
+			],
+			[
+				"ma",
+				"main"
+			],
+			[
+				"lcd",
+				"LCD_timer()\tfunction ⟠"
+			],
+			[
+				"qt",
+				"QtWidgets\t⟠"
+			],
+			[
+				"hm",
+				"HMI_input"
+			],
+			[
+				"te",
+				"Teller_2"
+			],
+			[
+				"cus",
+				"cus_Geo\t⟠"
+			],
+			[
+				"q",
+				"QUE_int\t⟠"
+			],
+			[
+				"date",
+				"datetime\ttype ⟠"
+			],
+			[
+				"el",
+				"elif\tkeyword ⟠"
+			],
+			[
+				"HM",
+				"HMI_input()\tfunction ⟠"
+			],
+			[
+				"fr",
+				"from\tkeyword ⟠"
+			],
+			[
+				"lis",
+				"list_ko"
+			],
+			[
+				"c",
+				"cheek"
+			],
+			[
+				"ind",
+				"index_pri"
+			],
+			[
+				"du",
+				"Duration"
+			],
+			[
+				"a",
+				"active_ko\t⟠"
+			],
+			[
+				"st",
+				"start_process"
+			],
+			[
+				"pr",
+				"Porcess_time"
+			],
+			[
+				"class",
+				"classmethod\t⟠"
+			],
+			[
+				"main",
+				"MainWindow"
+			],
+			[
+				"ls",
+				"list_ko"
+			],
+			[
+				"tab",
+				"tableWidget\t⟠"
+			],
+			[
+				"selec",
+				"Selector_ko_3\tstr ⟠"
+			],
+			[
+				"li",
+				"list_ko"
+			],
+			[
+				"ke",
+				"keys\t⟠"
+			],
+			[
+				"l",
+				"list_ko"
+			],
+			[
+				"sel",
+				"Selector_ko_2"
+			],
+			[
+				"ty",
+				"type_ko\t⟠"
+			],
+			[
+				"C",
+				"company"
+			],
+			[
+				"k",
+				"keys"
+			],
+			[
+				"cs",
+				"CSV_KO(…)\tfunction ⟠"
+			],
+			[
+				"_",
+				"__name__ == \"__main__\":\t1★ pro ⟠"
+			],
+			[
+				"r",
+				"reader"
+			],
+			[
+				"csv",
+				"csvfile\tTextIOWrapper ⟠"
+			],
+			[
+				"re",
+				"reader"
+			],
+			[
+				"bot",
+				"bot_pick\t⟠"
+			],
+			[
+				"bo",
+				"bot_pick\t⟠"
+			],
+			[
+				"dic",
+				"dict_ko\t⟠"
+			],
+			[
+				"db",
+				"db.Integer\t1★ pro ⟠"
+			],
+			[
+				"app",
+				"app.config\t3★ pro ⟠"
+			],
+			[
+				"cre",
+				"CREATE DATABASE\t1★ pro ⟠"
+			],
+			[
+				"di",
+				"div class\t⟠"
+			],
+			[
+				"Lo",
+				"Lorem ipsum\t⟠"
+			],
+			[
+				"lo",
+				"Lorem ipsum\t⟠"
+			],
+			[
+				"def",
+				"def_ko\t⟠"
+			],
+			[
+				"my",
+				"myLebel2\tLabel ⟠"
+			],
+			[
+				"stat",
+				"BOT_STATUS"
+			],
+			[
+				"wala",
+				"wala_payout"
+			],
+			[
+				"me",
+				"meron_payout"
+			],
+			[
+				"T",
+				"try"
+			],
+			[
+				"tr",
+				"try\tTry/Except/Else"
+			],
+			[
+				"wal",
+				"wala_panalo"
+			],
+			[
+				"mero",
+				"meron_panalo"
+			],
+			[
+				"la",
+				"lapse_ko"
+			],
+			[
+				"be",
+				"betting_time"
+			],
+			[
+				"liv",
+				"Live_Log1\tstr ⟠"
+			],
+			[
+				"Li",
+				"Live_Log1"
+			],
+			[
+				"log",
+				"livelog"
+			],
+			[
+				"live_l",
+				"live_fail"
+			],
+			[
+				"EL",
+				"elif"
+			],
+			[
+				"prin",
+				"print(\"3\")\t3★ pro ⟠"
+			],
+			[
+				"actua",
+				"actual_betting"
+			],
+			[
+				"ac",
+				"actual_betting"
+			],
+			[
+				"meron_",
+				"meron_button_xpath"
+			],
+			[
+				"wala_bu",
+				"wala_button_xpath"
+			],
+			[
+				"mer",
+				"meron_button"
+			],
+			[
+				"bot_b",
+				"BOT_BET\tint ⟠"
+			],
+			[
+				"an",
+				"amount_box\tWebElement ⟠"
+			],
+			[
+				"amo",
+				"amount_box_xpath"
+			],
+			[
+				"fin",
+				"find_element_by_xpath"
+			],
+			[
+				"ch",
+				"chunk"
+			],
+			[
+				"chu",
+				"chunk_size"
+			],
+			[
+				"dra",
+				"DRAW_OR_CANCELLED"
+			],
+			[
+				"per",
+				"PERA_LOSE_2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python_Run.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python_Run.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"kit",
+				"Kite: Package Settings"
+			],
+			[
+				"ki",
+				"Kite: Package Settings"
+			],
+			[
+				"Package Control: sa",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"ja",
+				"Set Syntax: Java"
+			],
+			[
+				"",
+				"Arithmetic"
+			],
+			[
+				"set",
+				"Set Syntax: Python"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: git",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 287.0,
+		"history":
+		[
+			"docker-compose up -d",
+			"list(filter(int(),list_ko))",
+			"list(filter(None,list_ko))",
+			"list(filter(int,list_ko))",
+			"list_ko = 3,2,7,45,32,6,87,78,4,(\"alpa\",34),324",
+			"list_ko = 3,,7,45,32,6,87,78,4,(\"alpa\",34),324",
+			"list_ko = a,b,e,f,s,e,r,g",
+			"import selenium",
+			"import os",
+			"a",
+			"a = 3",
+			"a"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Tamina/Documents/GitHub/flask-crud",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/controllers",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/models",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/models/__pycache__",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes/__pycache__",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc"
+	],
+	"file_history":
+	[
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/controllers/UserController.py",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes/user_bp.py",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/app.py",
+		"/C/Users/Tamina/Desktop/PROGRAMING PYTHON/Program ko/proj_flask_ko/Flask-Web-App-Tutorial-main/website/auth.py",
+		"/C/Users/Tamina/Desktop/PROGRAMING PYTHON/Program ko/proj_flask_ko/Flask-Web-App-Tutorial-main/website/models.py",
+		"/C/Users/Tamina/Desktop/PROGRAMING PYTHON/Program ko/proj_flask_ko/Flask-Web-App-Tutorial-main/website/__init__.py",
+		"/C/Users/Tamina/Desktop/PROGRAMING PYTHON/Program ko/proj_flask_ko/Flask-Web-App-Tutorial-main/website/views.py",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/config.py",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/login.html",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/login.html",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes/barcode_nav.py",
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/models/User.py",
+		"/C/Users/Tamina/Desktop/PROGRAMING PYTHON/Program ko/proj_flask_ko/flask for barcode/app.py",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/templates/upload_ko.html",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/Flask-Web-App-Tutorial-main/website/templates/home.html",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/models.py",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/router/route_ko.py",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/test.py",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/templates/home.html",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/flask for barcode/templates/add_barcode.html",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/Flask-Web-App-Tutorial-main/website/models.py",
+		"/C/Users/Tamina/Desktop/proj_flask_ko/Flask-Web-App-Tutorial-main/website/auth.py",
+		"/I/flask for barcode/templates/home.html",
+		"/I/Flask-Web-App-Tutorial-main/website/models.py",
+		"/I/Flask-Web-App-Tutorial-main/website/views.py",
+		"/I/Flask-Web-App-Tutorial-main/website/auth.py",
+		"/I/flask for barcode/app.py",
+		"/I/flask for barcode/router/route_ko.py",
+		"/I/flask for barcode/templates/base.html",
+		"/I/flask for barcode/templates/add_barcode.html",
+		"/I/flask for barcode/templates/test.html",
+		"/I/Flask-Web-App-Tutorial-main/website/templates/sign_up.html",
+		"/I/flask for barcode/templates/data_ko.html",
+		"/I/Flask-Web-App-Tutorial-main/website/templates/home.html",
+		"/C/Users/ADMIN/Desktop/Flask-Web-App-Tutorial-main/website/views.py",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/home.html",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/base.html",
+		"/C/Users/ADMIN/Desktop/Flask-Web-App-Tutorial-main/website/templates/base.html",
+		"/C/Users/ADMIN/Desktop/Flask-Web-App-Tutorial-main/website/templates/login.html",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/pages/login.html",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/pages/base.html",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/pages/home.html",
+		"/C/Users/ADMIN/Desktop/sample program/Rent_history.py",
+		"/C/Users/ADMIN/Desktop/flask for barcode/Router/route_ko.py",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/pages/nav_ko.html",
+		"/C/Users/ADMIN/Desktop/flask for barcode/app.py",
+		"/C/Users/ADMIN/Desktop/flask for barcode/templates/index.html",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/testko.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/Training/webui.py",
+		"/C/Users/ADMIN/OneDrive/file ko/git_djangko/sabalas/test.py",
+		"/C/Users/ADMIN/OneDrive/file ko/git_djangko/sabalas/manage.py",
+		"/C/Users/ADMIN/OneDrive/file ko/git_djangko/testing.py",
+		"/C/Users/ADMIN/OneDrive/file ko/git_djangko/test_ko.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/templates/index.html",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/static/src/style.css",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/WEB frameworks/app.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/static/css/main.css",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/index.html",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-main/app/devices/views.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/HTML/gleblu/index.html",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-develop/app/devices/models.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/webui.py",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-develop/app/users/views.py",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-develop/config/database.py",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-develop/app/devices/views.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/local_webUI/MYSQL_KO.py",
+		"/C/Users/ADMIN/Desktop/agnes/agnes-core-python-main/config/__init__.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Settings/SideBarEnhancements.json",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Packages/User/Chrome.sublime-build",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Program ko/seleniumko/Tosscoin.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/main.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/test.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/test2.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/lib/Par.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/Lib/Par.py",
+		"/C/Users/ADMIN/Desktop/auto web/proj/Par/Par.txt",
+		"/C/Users/ADMIN/Desktop/auto web/autoko.sublime-project",
+		"/C/Users/ADMIN/OneDrive/arduino_project_ko/sketch_may26a/sketch_may26a.ino",
+		"/C/Users/ADMIN/OneDrive/arduino_project_ko/wifi_ko.ino",
+		"/D/Program Files (x86)/Arduino/examples/01.Basics/Blink/Blink.ino",
+		"/C/Users/ADMIN/OneDrive/arduino_project_ko/test/testko.ino",
+		"/D/Program Files (x86)/Arduino/examples/01.Basics/AnalogReadSerial/AnalogReadSerial.ino",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Packages/Stino-Stino-Dev/libs/stino_runtime/__init__.py",
+		"/C/Users/ADMIN/AppData/Local/Arduino15/packages.stino-settings",
+		"/D/Program Files (x86)/Arduino/examples/01.Basics/AnalogReadSerial/test.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Packages/Stino-Stino-Dev/libs/stino_runtime/selected.py",
+		"/C/Users/ADMIN/Desktop/PROGRAMING PYTHON/Sublime/apps ko/Data/Packages/User/Stino/app_dir.stino-settings",
+		"/C/Users/ADMIN/OneDrive/arduino_project_ko/test",
+		"/D/Program Files (x86)/Arduino/libraries/WiFi/examples/WiFiChatServer/WiFiChatServer.ino",
+		"/D/Program Files (x86)/Arduino/examples/09.USB/Mouse/ButtonMouseControl/ButtonMouseControl.ino",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/main.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/OpenCV-Tutorials-main/tutorial4.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/OpenCV-Tutorials-main/tutorial6.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/OpenCV-Tutorials-main/tutorial7.py",
+		"/D/MiniPro/Serial25Index.dat",
+		"/D/MiniPro/MiniPro.exe",
+		"/D/MiniPro/language.dat",
+		"/D/MiniPro/InfoIC.dll",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/qt_Paint.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/extension.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/AOI_GUI.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/convert.cmd",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/resources_rc.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/M_Thread.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/SS",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/resources.qrc",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/pang_convrt_ko.txt",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/Camera.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/resources.py",
+		"/C/Users/ADMIN/OneDrive/file ko/sydel/QMS/threading_ko.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/Open_Camera.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/PyQt_MainWindow-master/MainWindow/resources.qrc",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/icons.qrc",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/USB_Camera_PyQt_face_recognotion-master/Pingan_face.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/opencv_camera/Main.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/training/USB_Camera_PyQt_face_recognotion-master/Open_Camera.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI_KO_PROJECT_V1.sublime-project",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/LCD_timer.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/test_3.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/test.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/test_2.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/Sequence.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/lcdko.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/tim_opencv.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/text.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/opencv_camera/write_to_file.py",
+		"/C/Users/ADMIN/OneDrive/file ko/AOI/opencv_camera/Main.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 130.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"simple_page"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.533055390113,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_build_panel":
+	{
+		"height": 132.0
+	},
+	"output.stino_panel":
+	{
+		"height": 153.0
+	},
+	"pinned_build_system": "Packages/User/Python_Run.sublime-build",
+	"project": "flask-crud.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

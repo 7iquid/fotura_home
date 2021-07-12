@@ -1,0 +1,47 @@
+{%extends "base.html"%}
+{% block title %} test Page {% endblock %}
+
+{% block content %}
+
+
+  <h2>Serving video files from Flask template</h2>
+  <video width="600" height="800" controls>
+    <source src={{ url_for( 'static' , filename="Video_ko/demo.mp4") }}  type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+
+
+
+
+
+
+  
+      <!-- data table -->
+      <table class="table-auto max-w-md mx-auto bg-gray-300 border-black rounded-lg shadow-2xl ">
+        <thead>
+          <tr>
+            <th class="border border-black px-8 py-2">Title</th>
+            <th class="border border-black w-1/2 px-10 py-4">DATA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+            <td class = "border border-black px-8 py-2">ID</td>
+            <td class = "border border-black px-8 py-2"> {{id_ko}} </td>
+          </tr>
+          <tr>
+            <td class = "border border-black px-8 py-2">Name</td>
+            <td class = "border border-black px-8 py-2">{{Name}}</td>
+          </tr>
+          <tr>
+            <td class = "border border-black px-8 py-2">Part no.</td>
+            <td class = "border border-black px-8 py-2">{{Part_no}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+
+{% endblock %}
