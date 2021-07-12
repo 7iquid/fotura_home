@@ -1,0 +1,5 @@
+flask
+flask-sqlalchemy
+flask-bcrypt
+Flask-Migrate
+base64
