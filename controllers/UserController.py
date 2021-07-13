@@ -1,7 +1,5 @@
-# pseudo code
-
 import sys
-from flask import render_template, redirect, url_for, request, abort, flash
+from flask import render_template, redirect, url_for, request, abort, flash, session
 from flask_login import login_required, current_user
 from models.User_DB import Barcode_table
 from models.User_DB import User
@@ -28,7 +26,7 @@ db = SQLAlchemy()
 # def delete(userId):
 #     ...
 
-# def destroy(userId):
+# def destroy(userId):sSssSssas
 #     ...
 
 def login():
@@ -41,18 +39,18 @@ def login():
             if check_password_hash(user.password, password):
                 flash('Logged in successfully!', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('user_bp.call_s'))
+                return redirect(url_for('index'))
             else:
                 flash('Incorrect password, try again.', category='error')
         else:
             flash('Email does not exist.', category='error')
-
+            
     return render_template("user_acc/login.html", user=current_user)
 
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('auth.login'))
+    return render_template('index.html', user=None)
 
 def sign_up():
     if request.method == 'POST':
@@ -79,6 +77,10 @@ def sign_up():
             db.session.commit()
             login_user(new_user, remember=True)
             flash('Account created!', category='success')
-            return redirect(url_for('views.home'))
+            return render_template("index.html", user=current_user)
 
     return render_template("user_acc/sign_up.html", user=current_user)
+
+@login_required
+def upload_data():    
+    return render_template("upload_ko.html", user=current_user)

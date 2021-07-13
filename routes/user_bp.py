@@ -17,8 +17,9 @@ user_bp = Blueprint('user_bp', __name__)
 user_bp.route('/login', methods=['GET', 'POST'])(login)
 user_bp.route('/logout')(logout)
 user_bp.route('/sign-up', methods=['GET', 'POST'])(sign_up)
+user_bp.route('/add_barcode', methods=['GET', 'POST'])(upload_data)
 
 
 @user_bp.route('/sign-up')
 def call_s():
-	return render_template("home.html", user=current_user)
+	return render_template("index.html", user=current_user)

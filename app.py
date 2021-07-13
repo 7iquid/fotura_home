@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config.from_object('config')
 
 login_manager = LoginManager()
-login_manager.login_view = 'user_bp.call_s'
+login_manager.login_view = 'user_bp.login'
 login_manager.init_app(app)
 
 @login_manager.user_loader
@@ -25,9 +25,9 @@ migrate = Migrate(app, db)
 app.register_blueprint(user_bp)
 
 @app.route('/')
-def index():
-    return render_template('index.html',user=current_user.first_name)
-
+def index(user=None):
+	return render_template('index.html',user=current_user)
+	
 if __name__ == '__main__':
 	app.debug = True
 	app.run()

@@ -10,26 +10,41 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
   </head>
 
-  <body class = "bg-indigo-800 shadow-inner">
+<body class = "bg-indigo-800 ">
 
-  <nav class=" bg-gray-900 p-2 flex justify-between text-white items-center ">
-      <img src="https://ureshiitech.com/img/ure.png" width="150" alt=logo>
-      <h2 class = "text-4xl font-light text-white m-0 ">BARCODE SYSTEM</h2>
-      
-      <div class="container">
-        <div>
+
+  <nav class="bg-gray-900 text-white mx-auto flex justify-between">
+    <div class = "container mx-auto">
+      <img src="https://ureshiitech.com/img/ure.png"  alt=logo>
+    </div>
+    <div class = "container">
+      <h2 class="text-5xl font-light text-white py-2 ">
+        BARCODE SYSTEM
+      </h2>
+    </div>
+    
+
+    <div class="container text-right my-auto">
+      <div class="container text-right">
         <a href="/" class = "hover:text-gray-600 ">Home</a>
         <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
+        {% if user.is_authenticated %}
+        <a href="/logout" class = "hover:text-gray-600 px-1">Logout</a>
+        {% else %}
         <a href="/login" class = "hover:text-gray-600 px-1">Login</a>
         <a href="/sign-up" class = "hover:text-gray-600 px-1">Sign-up</a>
+        {% endif %}
         <a href="#" class = "hover:text-gray-600">About</a>
-        </div>
-        <div>
-          {{user}}
-        </div>
       </div>
+
+      <div class="container">     
+        {{user.first_name}}
+      </div>
+    </div>
   </nav>
 {% block content %} {% endblock %}
 
+
   </body>
 </html>
+
