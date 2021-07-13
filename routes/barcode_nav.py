@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, Response, request, jsonify,render_template, session
-from models.User import Barcode_table
-from models.User import db
+from models.barcode_DB import Barcode_table
+from models.barcode_DB import db
 
 
 

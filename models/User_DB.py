@@ -1,25 +1,50 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
+from flask_login import UserMixin
 
 db = SQLAlchemy()
 
-class User(db.Model):
-    __tablename__ = 'users'    
+class User_activity(db.Model):
+    __tablename__ = 'User_activity'  
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(120))
-    age = db.Column(db.String(120))
-    address = db.Column(db.String(120))    
+    user_action = db.Column(db.String(150), unique=True)
+    user_time_log =db.Column(db.DateTime(timezone=True), default=func.now())
+    user_id = db.Column(db.Integer, db.ForeignKey('User.id'))
 
     @property
     def serialize(self):
         return {
             'id': self.id,
-            'name': self.name,
-            'city': self.city,
-            'state': self.state,
-            'address': self.address
+            'user_action': self.user_action,
+            'user_time_log': self.user_time_log,
+            'user_id': self.user_id
             }
+
+
+
+class User(db.Model, UserMixin):
+    __tablename__ = 'User'   
+
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(150), unique=True)
+    password = db.Column(db.String(150))
+    first_name = db.Column(db.String(150))
+    position =db.Column(db.String(150))
+    User_activity = db.relationship('User_activity')
+
+    @property
+    def serialize(self):
+        return {
+            'id': self.id,
+            'email': self.email,
+            'first_name': self.first_name,
+            'position': self.position,
+            'password': self.password,
+            'User_activity': self.User_activity
+            }
+
+
 
 class Barcode_table(db.Model):
     __tablename__ = 'Barcode_table' 

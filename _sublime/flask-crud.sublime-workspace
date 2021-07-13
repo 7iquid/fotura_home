@@ -684,14 +684,6 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Tamina/Documents/GitHub/flask-crud",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/controllers",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/models",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/models/__pycache__",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes/__pycache__",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc"
 	],
 	"file_history":
 	[
@@ -826,7 +818,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{

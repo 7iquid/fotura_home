@@ -15,13 +15,18 @@
   <nav class=" bg-gray-900 p-2 flex justify-between text-white items-center ">
       <img src="https://ureshiitech.com/img/ure.png" width="150" alt=logo>
       <h2 class = "text-4xl font-light text-white m-0 ">BARCODE SYSTEM</h2>
-      <div>
-        
+      
+      <div class="container">
+        <div>
         <a href="/" class = "hover:text-gray-600 ">Home</a>
         <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
         <a href="/login" class = "hover:text-gray-600 px-1">Login</a>
+        <a href="/sign-up" class = "hover:text-gray-600 px-1">Sign-up</a>
         <a href="#" class = "hover:text-gray-600">About</a>
-
+        </div>
+        <div>
+          {{user}}
+        </div>
       </div>
   </nav>
 {% block content %} {% endblock %}

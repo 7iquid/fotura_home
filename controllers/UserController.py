@@ -1,11 +1,14 @@
 # pseudo code
 
 import sys
-from flask import render_template, redirect, url_for, request, abort
+from flask import render_template, redirect, url_for, request, abort, flash
 from flask_login import login_required, current_user
-from models.User import Barcode_table
-from models.User import User
-from models.User import db
+from models.User_DB import Barcode_table
+from models.User_DB import User
+from models.User_DB import db
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import login_user, login_required, logout_user, current_user
+
 
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
@@ -38,7 +41,7 @@ def login():
             if check_password_hash(user.password, password):
                 flash('Logged in successfully!', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('user_bp.call_s'))
             else:
                 flash('Incorrect password, try again.', category='error')
         else:
