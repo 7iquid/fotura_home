@@ -1,8 +1,6 @@
 {% block banner %}
 
 {% with messages = get_flashed_messages(with_categories=true) %}
-	<iframe onload="myFunction()"> </iframe>
-	<p id="demo"></p>
  	 {% if messages %} 
     	{% for category, message in messages %} 
     		{% if category =='error' %}
@@ -34,7 +32,7 @@
 
 
 
-<script>
+<!-- <script>
 document.getElementById("myFrame").addEventListener("load", myFunction);
 const overlay = document.querySelector('#overlay');
 
@@ -43,7 +41,7 @@ function myFunction() {
   overlay.classList.toggle('hidden');
   console.log("set3");
 }
-</script>
+</script> -->
 
 {% endblock %}
 
