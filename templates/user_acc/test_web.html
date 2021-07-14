@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change DOM</title>
+    </head>
+    <body>
+        <p id="count">A = 0</p>
+        <button onclick="server.increment()">Increment</button>
+
+
+            {{data}} 
+            {%for user in data%}
+            <li>{{user.first_name}} {{user.email}} </li>
+            {% endfor %}
+</html>

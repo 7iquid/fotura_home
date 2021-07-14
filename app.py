@@ -4,6 +4,8 @@ from models.User_DB import db
 from routes.user_bp import user_bp
 from models.User_DB import User
 from flask_login import LoginManager, current_user
+import time
+
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -21,8 +23,12 @@ def load_user(id):
 db.init_app(app)
 migrate = Migrate(app, db)
 
+
+
 # app.register_blueprint(user_bp, url_prefix='/users')
 app.register_blueprint(user_bp)
+
+
 
 @app.route('/')
 def index(user=None):

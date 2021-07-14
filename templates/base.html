@@ -13,7 +13,8 @@
 <body class = "bg-indigo-800 ">
 
 
-  <nav class="bg-gray-900 text-white mx-auto flex justify-between">
+  <nav class="bg-gray-900 text-white mx-auto flex justify-between px-2">
+    
     <div class = "container mx-auto">
       <img src="https://ureshiitech.com/img/ure.png"  alt=logo>
     </div>
@@ -30,6 +31,8 @@
         <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
         {% if user.is_authenticated %}
         <a href="/logout" class = "hover:text-gray-600 px-1">Logout</a>
+        <a href="/update_user" class = "hover:text-gray-600 px-1">Update_user</a>
+
         {% else %}
         <a href="/login" class = "hover:text-gray-600 px-1">Login</a>
         <a href="/sign-up" class = "hover:text-gray-600 px-1">Sign-up</a>
@@ -42,8 +45,12 @@
       </div>
     </div>
   </nav>
-{% block content %} {% endblock %}
 
+
+
+
+{% include "/user_acc/Banner/banner.html" %}
+<div class="container">{% block content %} {% endblock %}</div>
 
   </body>
 </html>

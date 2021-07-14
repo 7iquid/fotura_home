@@ -84,3 +84,5 @@ def sign_up():
 @login_required
 def upload_data():    
     return render_template("upload_ko.html", user=current_user)
+
+

@@ -4,6 +4,7 @@ from flask_login import login_required, current_user
 from models.User_DB import Barcode_table
 from models.User_DB import User
 from models.User_DB import db
+import jyserver.Flask as jsf
 
 user_bp = Blueprint('user_bp', __name__)
 
@@ -23,3 +24,19 @@ user_bp.route('/add_barcode', methods=['GET', 'POST'])(upload_data)
 @user_bp.route('/sign-up')
 def call_s():
 	return render_template("index.html", user=current_user)
+
+@user_bp.route('/test')
+def test_web():    
+	my_list_data = User.query.all()
+	print(my_list_data)
+	return App.render(render_template("user_acc/test_web.html", data=my_list_data))
+
+
+@jsf.use(user_bp)
+class App:
+	def __init__(self):
+		self.count = 0
+	def increment(self):
+		my_list_data = my_list_data
+		self.js.document.getElementById('count').innerHTML = self.my_list_data["email"]
+

@@ -1,7 +1,9 @@
 {%extends "base.html"%}
 {% block title %} Home {% endblock title%}
 
-{% block content %}  
+{% block content %} 
+
+
 <!--  Data area  -->
 <div  class = "flex justify-between p-5  space-x-5 ">
   <!-- legft -->
@@ -47,6 +49,15 @@
   </div>
 </div>   
 
+<html>
+    <head>
+        <title>Change DOM</title>
+    </head>
+    <body>
+        <p id="count">A = 0</p>
+        <button onclick="server.increment()">Increment</button>
+    </body>
+</html>
 
 
 {% endblock %}  
