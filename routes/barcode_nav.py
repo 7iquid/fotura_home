@@ -1,7 +1,10 @@
 from flask import Flask, Blueprint, Response, request, jsonify,render_template, session
-from models.barcode_DB import Barcode_table
-from models.barcode_DB import db
-
+from controllers.UserController import *
+from flask_login import login_required, current_user
+from models.User_DB import Barcode_table
+from models.User_DB import User
+from models.User_DB import db
+import jyserver.Flask as jsf
 
 
 

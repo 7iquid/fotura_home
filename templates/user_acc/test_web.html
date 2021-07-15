@@ -4,12 +4,13 @@
         <title>Change DOM</title>
     </head>
     <body>
-        <p id="count">A = 0</p>
-        <button onclick="server.increment()">Increment</button>
-
-
-            {{data}} 
-            {%for user in data%}
-            <li>{{user.first_name}} {{user.email}} </li>
-            {% endfor %}
+      <form method="POST">
+          <select type="text" name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="submit" name="submit">
+      </form> 
 </html>

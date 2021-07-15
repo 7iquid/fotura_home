@@ -54,8 +54,9 @@ def logout():
 
 def sign_up():
     if request.method == 'POST':
-        email =         request.form.get('email')
         first_name =    request.form.get('firstName')
+        position    =   request.form.get("position")
+        email =         request.form.get('email')
         password1 =     request.form.get('password1')
         password2 =     request.form.get('password2')
 
@@ -68,14 +69,16 @@ def sign_up():
             flash('First name must be greater than 1 character.', category='error')
         elif password1 != password2:
             flash('Passwords don\'t match.', category='error')
-        elif len(password1) < 7:
+        elif len(password1) < 3:
             flash('Password must be at least 7 characters.', category='error')
         else:
             new_user = User(email=email, first_name=first_name, password=generate_password_hash(
-                password1, method='sha256'))
+                password1, method='sha256'),position=position)
+            print("actual na listahan",new_user)
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
+            print(new_user)
             flash('Account created!', category='success')
             return render_template("index.html", user=current_user)
 

@@ -519,36 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/Banner/banner.html",
-			"settings":
-			{
-				"buffer_size": 2276,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-				[
-					4,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AgAAAAYJAAAAAAAACgkAAAAAAAAAAAAA3AcAAAAAAADhBwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAABgkAAAAAAADcBwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					2,
-					"right_delete",
-					null,
-					"AgAAAFUAAAAAAAAAVQAAAAAAAAA8AAAACTxpZnJhbWUgb25sb2FkPSJteUZ1bmN0aW9uKCkiPiA8L2lmcmFtZT4KCTxwIGlkPSJkZW1vIj48L3A+VQAAAAAAAABVAAAAAAAAAAEAAAAK",
-					"AQAAAAAAAAABAAAAkQAAAAAAAABVAAAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -719,19 +689,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Tamina/Documents/GitHub/flask-crud",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/Banner"
+		"/C/Users/Tamina/Documents/GitHub/flask-crud"
 	],
 	"file_history":
 	[
+		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/Banner/banner.html",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/test_web.html",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/controllers/UserController.py",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/index.html",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/static/js_scrip/event_listener.js",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/routes/user_bp.py",
-		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/Banner/banner.html",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/base.html",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/app.py",
 		"/C/Users/Tamina/Documents/GitHub/flask-crud/templates/test/javascrip/script.js",
@@ -907,39 +874,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Tamina/Documents/GitHub/flask-crud/templates/user_acc/Banner/banner.html",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								85
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],

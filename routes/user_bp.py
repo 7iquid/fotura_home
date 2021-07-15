@@ -21,14 +21,20 @@ user_bp.route('/sign-up', methods=['GET', 'POST'])(sign_up)
 user_bp.route('/add_barcode', methods=['GET', 'POST'])(upload_data)
 
 
-@user_bp.route('/sign-up')
-def call_s():
-	return render_template("index.html", user=current_user)
+# @user_bp.route('/sign-up', methods=['GET', 'POST'])
+# def call_s():
+# 	return render_template("index.html", user=current_user)
 
-@user_bp.route('/test')
+@user_bp.route('/test', methods=['GET', 'POST'])
 def test_web():    
-	my_list_data = User.query.all()
-	print(my_list_data)
+	my_list_data = None
+	print(request.method)
+	if request.method == 'POST':
+		email =       request.form.get('cars')
+		print(email)
+		return email
+	else:
+		return App.render(render_template("user_acc/test_web.html", data=my_list_data))
 	return App.render(render_template("user_acc/test_web.html", data=my_list_data))
 
 

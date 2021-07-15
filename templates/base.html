@@ -31,8 +31,9 @@
         <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
         {% if user.is_authenticated %}
         <a href="/logout" class = "hover:text-gray-600 px-1">Logout</a>
+            {% if user.position == Admin %}
         <a href="/update_user" class = "hover:text-gray-600 px-1">Update_user</a>
-
+            {% endif %}
         {% else %}
         <a href="/login" class = "hover:text-gray-600 px-1">Login</a>
         <a href="/sign-up" class = "hover:text-gray-600 px-1">Sign-up</a>
@@ -40,7 +41,8 @@
         <a href="#" class = "hover:text-gray-600">About</a>
       </div>
 
-      <div class="container">     
+      <div class="container flex justify-end">     
+        {{user.position}}        
         {{user.first_name}}
       </div>
     </div>
@@ -50,6 +52,7 @@
 
 
 {% include "/user_acc/Banner/banner.html" %}
+
 <div class="container">{% block content %} {% endblock %}</div>
 
   </body>
