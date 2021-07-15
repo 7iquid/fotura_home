@@ -1,9 +1,9 @@
 from flask import Flask, Blueprint, Response, request, jsonify,render_template, session
 from controllers.UserController import *
 from flask_login import login_required, current_user
-from models.User_DB import Barcode_table
-from models.User_DB import User
-from models.User_DB import db
+from models.Baracode_user_DB import Barcode_table
+from models.Baracode_user_DB import User
+from models.Baracode_user_DB import db
 import jyserver.Flask as jsf
 
 
@@ -11,13 +11,14 @@ import jyserver.Flask as jsf
 barcode_nav = Blueprint('barcode_nav', __name__)
 
 
-@barcode_nav.route('/ok')
+@barcode_nav.route('/Barcode_sys/user_db_nav')
 def login():
-    print(session["barcode"])
+    data = User.query.all()
+    return render_template("Barcode_sys/Front_end/user_db_nav.html",data = data, user = current_user)  
    
 
 
-@user_bp.route('/add_code', methods=['GET',"POST"])
+@barcode_nav.route('/Barcode_sys/barcode_upload', methods=['GET',"POST"])
 def upload_pic():
     if request.method == "POST":
         file = request.files['pic']

@@ -1,10 +1,12 @@
 from flask import Flask, Blueprint, Response, request, jsonify,render_template, session
 from flask_migrate import Migrate
-from models.User_DB import db
+from models.Baracode_user_DB import db
+from templates.Barcode_sys.back_end import barcode_nav
+
 from routes.user_bp import user_bp
-from models.User_DB import User
+from models.Baracode_user_DB import User
 from flask_login import LoginManager, current_user
-import time
+from templates.Barcode_sys.back_end.barcode_nav import *
 
 
 app = Flask(__name__)
@@ -27,6 +29,7 @@ migrate = Migrate(app, db)
 
 # app.register_blueprint(user_bp, url_prefix='/users')
 app.register_blueprint(user_bp)
+app.register_blueprint(barcode_nav)
 
 
 

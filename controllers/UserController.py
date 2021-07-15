@@ -1,9 +1,9 @@
 import sys
 from flask import render_template, redirect, url_for, request, abort, flash, session
 from flask_login import login_required, current_user
-from models.User_DB import Barcode_table
-from models.User_DB import User
-from models.User_DB import db
+from models.Baracode_user_DB import Barcode_table
+from models.Baracode_user_DB import User
+from models.Baracode_user_DB import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, login_required, logout_user, current_user
 

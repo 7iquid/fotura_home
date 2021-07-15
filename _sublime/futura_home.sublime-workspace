@@ -689,7 +689,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Tamina/Documents/GitHub/flask-crud"
+		"/C/Users/Tamina/Documents/GitHub/fotura_home"
 	],
 	"file_history":
 	[
@@ -831,7 +831,6 @@
 		"height": 130.0,
 		"where_history":
 		[
-			"<project>"
 		]
 	},
 	"find_state":
@@ -839,15 +838,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"count",
-			"overlay",
-			"addEventListener",
-			"green",
-			"messages",
-			"{% if user.is_authenticated %}",
-			"current_user",
-			"session",
-			"simple_page"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -866,11 +856,6 @@
 	},
 	"groups":
 	[
-		{
-			"sheets":
-			[
-			]
-		},
 		{
 			"sheets":
 			[
@@ -894,18 +879,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.470383850827,
 			1.0
 		],
 		"rows":
@@ -932,7 +910,7 @@
 		"height": 153.0
 	},
 	"pinned_build_system": "Packages/User/Python_Run.sublime-build",
-	"project": "flask-crud.sublime-project",
+	"project": "futura_home.sublime-project",
 	"replace":
 	{
 		"height": 50.0
@@ -969,7 +947,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

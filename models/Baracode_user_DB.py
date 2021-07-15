@@ -44,8 +44,6 @@ class User(db.Model, UserMixin):
             'User_activity': self.User_activity
             }
 
-
-
 class Barcode_table(db.Model):
     __tablename__ = 'Barcode_table' 
 
@@ -70,3 +68,4 @@ class Barcode_table(db.Model):
             'img_ko': self.img_ko,
             'mimetype_db': self.mimetype_db
             }
+

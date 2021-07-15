@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+{% block title %} Upload_ko {% endblock title%}
+
+{% block content %}  
+
+
+<div class="flex justify-center mt-6" style="font-family:Roboto">
+   <table class=" border-2 bg-gray-100">
+      
+      <tr class="border-2 bg-blue-600  border-black text-white">
+         <th class="border-2 border-black px-2 py">ID</th>
+         <th class="border-2 border-black px-4">NAME</th>
+         <th class="border-2 border-black px-2">ACCESS LEVEL</th>
+         <th class="border-2 border-black px-2">EMAIL</th>
+         <th class="border-2 border-black px-2">PASSWORD</th>
+      </tr>
+      {% for i in data %}
+      <tr>
+         <td class="border-2 border-black px-2 py">{{i.id}}</td>
+         <td class="border-2 border-black px-4">{{i.first_name}}</td>
+         <td class="border-2 border-black px-2">{{i.position}}</td>
+         <td class="border-2 border-black px-2">{{i.email}}</td>
+         <td class="border-2 border-black px-2">{{i.password}}</td>
+      </tr>
+      {% endfor %}
+   </div>
+   
+</table>
+
+
+
+{% endblock %}  
