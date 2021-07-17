@@ -12,7 +12,7 @@ barcode_nav = Blueprint('barcode_nav', __name__)
 
 
 @barcode_nav.route('/Barcode_sys/user_db_nav')
-def login():
+def user_DB_list():
     data = User.query.all()
     return render_template("Barcode_sys/Front_end/user_db_nav.html",data = data, user = current_user)  
    
