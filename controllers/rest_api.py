@@ -13,21 +13,17 @@ class Video(Resource):
 	def get(self):
 		data_dic = {}
 		user_list = []
-		user = {}
-
 
 		data = User.query.all()
 		for i in data:
-			data_dic.update({
-				"id":i.id,
-				"name":i.first_name,
-				"position" : i.position,
-				"email" : i.email,
-				"password": i.password
-				})
-			user_list.append({data_dic})
-		print("ok")
-		return user_list
-
+			data_dic =({
+							"id":i.id,
+							"name":i.first_name,
+							"position" : i.position,
+							"email" : i.email,
+							"password": i.password
+							})
+			user_list.append(data_dic)
+		return(user_list)
 
 api.add_resource(Video, "/api")
