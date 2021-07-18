@@ -28,6 +28,6 @@ def upload_pic():
         db.session.add(img)
         db.session.commit()
 
-        return render_template("upload_ko.html")
+        return render_template("Barcode_sys/Front_end/barcode_upload.html",user = current_user)
     else:
-        return render_template("upload_ko.html")
+        return render_template("Barcode_sys/Front_end/barcode_upload.html", user = current_user)

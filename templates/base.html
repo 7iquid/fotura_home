@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
   </head>
 
-<body class = "bg-indigo-800 ">
 
+
+<body class = "bg-indigo-800 w-full h-full">
 
   <nav class="bg-gray-900 text-white mx-auto flex justify-between px-2">
     
@@ -23,12 +24,11 @@
         BARCODE SYSTEM
       </h2>
     </div>
-    
 
     <div class="container text-right my-auto">
       <div class="container text-right">
         <a href="/" class = "hover:text-gray-600 ">Home</a>
-        <a href="/add_barcode" class = "hover:text-gray-600 px-1">Add Barcode</a>
+        <a href="/Check_barcode" class = "hover:text-gray-600 px-1">Check barcode</a>
         {% if user.is_authenticated %}
         <a href="/logout" class = "hover:text-gray-600 px-1">Logout</a>
             {% if user.position == Admin %}
@@ -54,7 +54,7 @@
 
 {% include "/user_acc/Banner/banner.html" %}
 
-<div class="container">{% block content %} {% endblock %}</div>
+{% block content %} {% endblock %}
 
   </body>
 </html>

@@ -4,3 +4,4 @@ flask-bcrypt
 Flask-Migrate
 base64
 jyserver
+flask_restful

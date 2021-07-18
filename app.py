@@ -47,5 +47,6 @@ def index(user=None):
 	return render_template('index.html',user=current_user)
 	
 if __name__ == '__main__':
-	app.debug = True
-	app.run()
+	# app.debug = True
+	# app.run(host="192.168.43.227",debug=True)
+	app.run(host="127.0.0.1",debug=True)
