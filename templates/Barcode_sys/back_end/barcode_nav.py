@@ -31,3 +31,19 @@ def upload_pic():
         return render_template("Barcode_sys/Front_end/barcode_upload.html",user = current_user)
     else:
         return render_template("Barcode_sys/Front_end/barcode_upload.html", user = current_user)
+
+
+
+@barcode_nav.route('/Barcode_sys/barcode_upload2', methods=['GET',"POST"])
+def upload_pic2():
+    if request.method == "POST":
+        file = request.files['pic']
+        filename = (file.filename)
+        mimetype = (file.mimetype)
+        img = Barcode_table(img_ko = file.read(), mimetype_db=mimetype, name_db=filename)
+        db.session.add(img)
+        db.session.commit()
+
+        return render_template("Barcode_sys/Front_end/barcode_upload.html",user = current_user)
+    else:
+        return render_template("Barcode_sys/Front_end/barcode_upload.html", user = current_user)
