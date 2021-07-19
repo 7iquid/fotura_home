@@ -8,29 +8,30 @@
 <div class="container justify-center mx-auto bg-opacity-70 bg-gray-100 rounded-lg" >
        <form  method="POST" style="font-family:Roboto" >
     <!-- tittle -->
-            <h2 class="text-3xl text-center text-gray-700 my-4 pt-4">Barcode Data Management</h2>
+            <h1 class="text-3xl text-center text-gray-700 my-4 pt-4">Barcode Data Management</h1>
 
     <!-- scan barcode submit -->
-            <div class=" flex justify-center  ">
-                    <input class="rounded-l-lg w-1/2 px-3 py-2 shadow-lg" type="text" name="code" placeholder="Barcode">
-
-                <div class=" bg-blue-400 rounded-r-lg px-3 py-2 shadow-lg">
-                    <button type="submit" name="barcode_search" >
-                        Creat
+            <div >
+                <div class=" flex align-middle justify-center h-full w-full">
+                    <input class="border-2 border-gray-400  rounded-2xl w-3/4 px-4 py-3 shadow-lg text-3xl"  type="text" name="code" placeholder="Barcode">
+                </div>
+                <div class=" flex align-middle h-full w-full  justify-evenly mt-4">
+                    <button class="border-2 border-blue-900 bg-blue-600 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_search" title="create new data from data base">
+                        Create
                     </button>
-                    <button type="submit" name="barcode_update" >
+                    <button class="border-2 border-blue-900 bg-blue-600 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_update" title="search existing data from data base">
                         Read
                     </button>
-                    <button type="submit" name="barcode_delete" >
+                    <button class="border-2 border-blue-900 bg-blue-600 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_delete" title="update existing data from data base">
                         Update
                     </button> 
-                    <button type="submit" name="barcode_delete" >
+                    <button class="border-2 border-blue-900 bg-blue-600 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_delete" title="delete existing data from data base">
                         Delete
                     </button>        
                 </div>
             </div>
 
-
+    <!-- data table -->
             <div class="flex justify-evenly py-5 w-full">
     <!-- left detail -->
                 <div class="container px-3 py-3 w-full mx-10">
@@ -64,9 +65,11 @@
     <!-- rigth picture -->
                 <div class="container px-3 py-3 w-full mx-10">
                     <p>Picture:</p>
-                    <textarea class="border-2 border-gray-400 w-20 h-80 rounded-lg w-max px-3 py-2 ml-10 " type="text" name="remarks" placeholder="Input" cols="50" rows="10" id="picture_ko">pagkain</textarea>
+                      <img class="bg-white border-2 border-gray-400 px-3 py-2 ml-10 w-full h-full " id="picture_ko" placeholder="Insert Picture"> </img>  <img class="bg-white border-2 border-gray-400 px-3 py-2 ml-10 w-full h-full " id="picture_ko" placeholder="Insert Picture"> </img>
                     <div>
-                        
+                        <button>
+                            Select Picture
+                        </button>
                     </div>
                 </div>
             </div>
