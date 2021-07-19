@@ -33,3 +33,4 @@ ENV/
 
 # Any Local Files
 local/
+*.pyc
