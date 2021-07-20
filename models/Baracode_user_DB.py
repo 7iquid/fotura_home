@@ -31,7 +31,8 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
     position =db.Column(db.String(150))
-    User_activity = db.relationship('User_activity')
+    User_activity_parent = db.relationship('User_activity')
+    User_barcode_parent = db.relationship('Barcode_table')
 
     @property
     def serialize(self):
@@ -41,7 +42,8 @@ class User(db.Model, UserMixin):
             'first_name': self.first_name,
             'position': self.position,
             'password': self.password,
-            'User_activity': self.User_activity
+            'User_activity_parent': self.User_activity_parent,
+            'User_barcode_parent': self.User_barcode_parent
             }
 
 class Barcode_table(db.Model):
@@ -55,6 +57,7 @@ class Barcode_table(db.Model):
     date_exit = db.Column(db.DateTime(timezone=True), default=func.now())
     img_ko = db.Column(db.LargeBinary)
     mimetype_db = db.Column(db.Text, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('User.id'))
 
     @property
     def serialize(self):

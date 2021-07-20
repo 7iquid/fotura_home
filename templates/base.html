@@ -11,10 +11,10 @@
     
   </head>
 
+<!-- from-indigo-600  to-red-500 -->
 
-
-<body class = "bg-indigo-800 w-full h-full">
-
+<body >
+  <div class = " w-full h-full" style="background-image: url('{{url_for('static',filename='bg_image/main_bg.jpg')}}');"  >
   <nav class="bg-gray-900 text-white mx-auto flex justify-between px-2">
     
     <div class = "container mx-auto">
@@ -56,7 +56,7 @@
 {% include "/user_acc/Banner/banner.html" %}
 
 {% block content %} {% endblock %}
-
+    </div>
   </body>
 </html>
 
