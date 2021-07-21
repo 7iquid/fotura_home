@@ -2,7 +2,7 @@
 {% block title %} Upload_ko {% endblock title%}
 {% block content %}
 <div class="container justify-center mx-auto  bg-blue-300 bg-opacity-20  bg-gradient-to-r  rounded-lg ">
-    <div style="font-family:Roboto">
+    <form method="POST" style="font-family:Roboto">
         <!-- tittle -->
         <h1 class="text-3xl text-center text-gray-700 my-4 pt-4">Barcode Data Management</h1>
         <!-- scan barcode submit -->
@@ -14,7 +14,7 @@
                 <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_create" id="barcode_create" title="create new data from data base">
                     Create
                 </button>
-                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white"  name="barcode_read" id="barcode_read" title="search existing data from data base">
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_read" id="barcode_read" title="search existing data from data base">
                     Read
                 </button>
                 <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_update" id="barcode_update" title="update existing data from data base">
@@ -31,7 +31,7 @@
             <div class="container px-3 py-3 w-full mx-10">
                 <div>
                     <p>Item name:</p>
-                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg " type="text" name="item_name" id="item_name" placeholder="Input">123213
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg " type="text" name="item_name" id="item_name" placeholder="Input">
                 </div>
                 <div>
                     <p>Brand Name:</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>
 <script type="text/javascript">
 window.addEventListener('load', function() {
