@@ -16,16 +16,16 @@
                     <input class="border-2 border-gray-400  rounded-2xl w-3/4 px-4 py-3 shadow-lg text-3xl"  type="text" name="code" placeholder="Barcode">
                 </div>
                 <div class=" flex align-middle h-full w-full  justify-evenly mt-4">
-                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_search" title="create new data from data base">
+                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" id="barcode_create" title="create new data from data base">
                         Create
                     </button>
-                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_update" title="search existing data from data base">
+                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" id="barcode_read" title="search existing data from data base">
                         Read
                     </button>
-                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_delete" title="update existing data from data base">
+                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" id="barcode_update" title="update existing data from data base">
                         Update
                     </button> 
-                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_delete" title="delete existing data from data base">
+                    <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" id="barcode_delete" title="delete existing data from data base">
                         Delete
                     </button>        
                 </div>
@@ -69,7 +69,6 @@
                        </img>
                     <div class="px-3 py-3  flex w-full">
                         <input class="text-2xl rounded-lg px-10 py-2 " type="file" name="pic" />
-                         </button>
                     </div>
                 </div>
             </div>
@@ -92,4 +91,7 @@ window.addEventListener('load', function() {
 });
 
 </script>
+
+<!-- <script src="{{url_for('static', filename='js_scrip/api_ajax.js')}}"></script>
+ -->
 {% endblock %}  

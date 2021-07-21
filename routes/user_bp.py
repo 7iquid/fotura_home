@@ -19,7 +19,7 @@ user_bp.route('/login', methods=['GET', 'POST'])(login)
 user_bp.route('/logout')(logout)
 user_bp.route('/sign-up', methods=['GET', 'POST'])(sign_up)
 user_bp.route('/add_barcode', methods=['GET', 'POST'])(upload_data)
-
+user_bp.route('/test1', methods=['GET', 'POST'])(test_ko)
 
 # @user_bp.route('/sign-up', methods=['GET', 'POST'])
 # def call_s():

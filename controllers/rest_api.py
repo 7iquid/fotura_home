@@ -36,7 +36,7 @@ class Barcode_Db(Resource):
 		data = Barcode_table.query.all()
 
 		for i in data:
-			img_ko =base64.b64encode(i.img_o)
+			img_ko =base64.b64encode(i.img_ko)
 			img_ko = img_ko.decode("UTF-8")
 			data_dic =({
 							"id":i.id,
