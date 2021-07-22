@@ -19,7 +19,7 @@ user_bp.route('/login', methods=['GET', 'POST'])(login)
 user_bp.route('/logout')(logout)
 user_bp.route('/sign-up', methods=['GET', 'POST'])(sign_up)
 user_bp.route('/add_barcode', methods=['GET', 'POST'])(upload_data)
-user_bp.route('/test1', methods=['GET', 'POST'])(test_ko)
+
 
 # @user_bp.route('/sign-up', methods=['GET', 'POST'])
 # def call_s():
@@ -27,15 +27,7 @@ user_bp.route('/test1', methods=['GET', 'POST'])(test_ko)
 
 @user_bp.route('/test', methods=['GET', 'POST'])
 def test_web():    
-	my_list_data = None
-	print(request.method)
-	if request.method == 'POST':
-		email =       request.form.get('cars')
-		print(email)
-		return email
-	else:
-		return App.render(render_template("user_acc/test_web.html", data=my_list_data))
-	return App.render(render_template("user_acc/test_web.html", data=my_list_data))
+	return render_template("Barcode_sys/Front_end/test.html",user=current_user)
 
 
 @jsf.use(user_bp)

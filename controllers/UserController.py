@@ -89,7 +89,3 @@ def upload_data():
     return render_template("upload_ko.html", user=current_user)
 
 
-def test_ko():    
-    return render_template("/test/test_ko.html", user=current_user)
-
-
