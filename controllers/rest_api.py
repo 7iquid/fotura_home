@@ -34,6 +34,7 @@ api.add_resource(User_Db, "/api")
 class Barcode_Db(Resource):
 	def get(self,query_key = None,query_value = None):
 		if query_value:
+			print(request.form.get('barcode_id'))
 			data = Barcode_table.query.filter_by(barcode_id=query_value).first()
 			if data:
 				if data.prod_pic:
