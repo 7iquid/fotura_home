@@ -50,8 +50,13 @@ class Barcode_Db(Resource):
 	def put(self,pri_key):
 		print("put is working")
 		print(pri_key)
+<<<<<<< Updated upstream
 		tinapay = request.form
 		print(request.form)
+=======
+		tinapay =request.get_json()
+		print(tinapay)
+>>>>>>> Stashed changes
 		# args = barcode_data.parse_args()
 		# return bar[args],201
 		return tinapay

@@ -43,11 +43,19 @@ $(document).ready(function() {
 
         let url_ko = 'http://127.0.0.1:5000/api_barcode/tamina';
         // let data =  {'data':"clicked"}
+<<<<<<< Updated upstream
         data_2 = $('form').serializeJSON();
         const settings = {
                 url: url_ko,
                 dataType:"json",
                 data:{"name":"oat"},  
+=======
+        var data = {"name":"John Doe","age":"21"};
+        const settings = {
+                url: url_ko,
+                dataType:"json",
+                 data : JSON.stringify(data),
+>>>>>>> Stashed changes
                 method: "PUT",
                 headers: {
                     "x-api-key": "API_KEY",
@@ -57,8 +65,6 @@ $(document).ready(function() {
             };
     $.ajax(settings).done(function (response) {
         console.log(response);
-
-
 
 
    //      const data_ko =
