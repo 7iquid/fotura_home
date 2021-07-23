@@ -12,34 +12,25 @@ import time
 api_ko = Blueprint('api_ko', __name__)
 
 api= Api(api_ko)
-
 class User_Db(Resource):
-	def get(j):
+	def get(self):
 		data_dic = {}
 		user_list = []
-
-		user_data = User.query.all()
+		barcode_list =[]
+		data = User.query.all()
 		barcode_data = Barcode_table.query.all()
-		# print("==================>" ,current_user.User_barcode_parent)
-		# for i in current_user.User_barcode_parent:
-		# 	print(i.barcode_id)
-		# return 201
-		for i in user_data:
-			print(f"check user count {i.first_name}")
-			data_dic ={
-							"id":i.id,
-							"name":i.first_name,
-							"position" : i.position,
-							"email" : i.email,
-							"password": i.password,
-							"barcode_data":""
-							}
+		for i in data:
+			data_dic =({
+							"2.id":i.id,
+							"1.name":i.first_name,
+							"4.position" : i.position,
+							"3.email" : i.email,
+							"5.password": i.password,
+							
+							})
 			for j in barcode_data:
-				print(f"count barcode availble = {j.barcode_id}")
 				if i.id == j.user_id:
-					print(f"count barcode that pass availble = {j.barcode_id}")
-					data_dic["barcode_data"]={j.barcode_id:""}
-					data_dic["barcode_data"][j.barcode_id]={
+					barcode_data_dic={
 						            'id': j.id,
 				            'barcode_id': j.barcode_id, 
 				            'item_name': j.item_name,
@@ -53,11 +44,13 @@ class User_Db(Resource):
 				            'date_added': j.date_added,
 				            'user_id': j.user_id
 						}
-				
-			print(i)		
+					barcode_list.append(barcode_data_dic)
+			data_dic["6.barcode_data"] = barcode_list
+			barcode_list=[]
 			user_list.append(data_dic)
-		return jsonify(data_dic)
+		return jsonify(user_list)
 api.add_resource(User_Db, "/api")
+
 
 
 
@@ -78,11 +71,11 @@ api.add_resource(User_Db, "/api")
 
 bar = {}
 class Barcode_Db(Resource):
-	def get(j,pri_key):
+	def get(self,pri_key):
 		barcode_id =request.get_json()
 		return barcode_id
 
-	def put(j,pri_key):
+	def put(self,pri_key):
 		args = request.get_json()	
 		barcode = Barcode_table(barcode_id=args["barcode_id"],item_name=args["item_name"],brand_name=args["brand_name"],part_no=args["part_no"],serila_no=args["serila_no"],description=args["description"],remarks=args["remarks"],mimetype_db="1.png",user_id = current_user.id)
 		# print(args["barcode_id"])
@@ -107,7 +100,7 @@ api.add_resource(Barcode_Db, "/api_barcode/<pri_key>")
 
 
 class test1(Resource):
-	def get(j):
+	def get(self):
 		data_dic = {}
 		user_list = []
 
@@ -124,7 +117,7 @@ class test1(Resource):
 		return jsonify(user_list)
 
 class test2(Resource):
-	def get(j):
+	def get(self):
 		time.sleep(3)
 		data_dic = {}
 		user_list = []
