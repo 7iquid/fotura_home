@@ -58,7 +58,7 @@ class Barcode_table(db.Model):
     description = db.Column(db.String(100))
     remarks = db.Column(db.String(400))
     prod_pic = db.Column(db.LargeBinary)
-    mimetype_db = db.Column(db.Text, nullable=False)
+    mimetype_db = db.Column(db.Text, nullable = True)
     date_added = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('User.id'))
 
