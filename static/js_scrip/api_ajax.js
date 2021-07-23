@@ -40,15 +40,14 @@ $(document).ready(function() {
 
     });
     $('#barcode_create').on('click', function() {
-        // console.log("set 2 ok");
-        // console.log($('#barcode_id').val())
-        // let url_ko = `http://127.0.0.1:5000/api_barcode/${query_key}/${query_value}`;
+
         let url_ko = 'http://127.0.0.1:5000/api_barcode/tamina';
         // let data =  {'data':"clicked"}
+        data_2 = $('form').serializeJSON();
         const settings = {
                 url: url_ko,
                 dataType:"json",
-                data:{"name":"oat"}, 
+                data:{"name":"oat"},  
                 method: "PUT",
                 headers: {
                     "x-api-key": "API_KEY",

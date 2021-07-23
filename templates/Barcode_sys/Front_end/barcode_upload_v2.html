@@ -1,8 +1,8 @@
 {%extends "base.html"%}
 {% block title %} Upload_ko {% endblock title%}
 {% block content %}
-<div class=" container justify-center mx-auto  bg-blue-300 bg-opacity-20  bg-gradient-to-r  rounded-lg ">
-    <form method="POST" style="font-family:Roboto" class="Bardcode_data" >
+<div class="container justify-center mx-auto  bg-blue-300 bg-opacity-20  bg-gradient-to-r  rounded-lg ">
+    <div style="font-family:Roboto">
         <!-- tittle -->
         <h1 class="text-3xl text-center text-gray-700 my-4 pt-4">Barcode Data Management</h1>
         <!-- scan barcode submit -->
@@ -14,7 +14,7 @@
                 <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_create" id="barcode_create" title="create new data from data base">
                     Create
                 </button>
-                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_read" id="barcode_read" title="search existing data from data base">
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white"  name="barcode_read" id="barcode_read" title="search existing data from data base">
                     Read
                 </button>
                 <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_update" id="barcode_update" title="update existing data from data base">
@@ -65,14 +65,9 @@
                 </div>
             </div>
         </div>
-    </form>
+    </div>
 </div>
-
-<script src="{{url_for('static',filename='js_scrip/jquery-3.6.0.js')}}"></script>
-<script src="{{url_for('static',filename='js_scrip/jquery.serializejson.js')}}"></script>
-<script src="{{url_for('static',filename='js_scrip/api_ajax.js')}}"></script>
 <script type="text/javascript">
-$('form').submit(false);
 window.addEventListener('load', function() {
     document.querySelector('input[type="file"]').addEventListener('change', function() {
         if (this.files && this.files[0]) {
@@ -85,11 +80,27 @@ window.addEventListener('load', function() {
         }
     });
 });
-
-// data = $('form').serializeJSON();
-// console.log( data );
-
 </script>
-
+ <script src="{{url_for('static',filename='js_scrip/api_ajax.js')}}"></script>
+ <script src="{{url_for('static',filename='js_scrip/jquery-3.6.0.js')}}"></script>
+ <script type=text/javascript>  $SCRIPT_ROOT = {{ request.script_root|tojson }};</script>
+ <script type=text/javascript>
+  $(function() {
+    $('a#calculate').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+<h1>jQuery Example</h1>
+<p><input type=text size=5 name=a> +
+   <input type=text size=5 name=b> =
+   <span id=result>?</span>
+<p><a href=# id=calculate>calculate server side</a>
 
 {% endblock %}

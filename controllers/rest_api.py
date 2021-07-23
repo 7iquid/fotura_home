@@ -50,7 +50,8 @@ class Barcode_Db(Resource):
 	def put(self,pri_key):
 		print("put is working")
 		print(pri_key)
-		tinapay =request.headers
+		tinapay = request.form
+		print(request.form)
 		# args = barcode_data.parse_args()
 		# return bar[args],201
 		return tinapay
