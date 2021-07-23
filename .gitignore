@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+_sublime/
 *.py[cod]
 *$py.class
 
@@ -32,3 +33,8 @@ ENV/
 
 # Any Local Files
 local/
+*.pyc
+__pycache__/app.cpython-39.pyc
+__pycache__/app.cpython-39.pyc
+__pycache__/app.cpython-39.pyc
+_sublime/futura_home.sublime-workspace

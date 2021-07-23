@@ -1,0 +1,106 @@
+{%extends "base.html"%}
+{% block title %} Upload_ko {% endblock title%}
+{% block content %}
+<div class="container justify-center mx-auto  bg-blue-300 bg-opacity-20  bg-gradient-to-r  rounded-lg ">
+    <div style="font-family:Roboto">
+        <!-- tittle -->
+        <h1 class="text-3xl text-center text-gray-700 my-4 pt-4">Barcode Data Management</h1>
+        <!-- scan barcode submit -->
+        <div>
+            <div class=" flex align-middle justify-center h-full w-full">
+                <input class="border-2 border-gray-400  rounded-2xl w-3/4 px-4 py-3 shadow-lg text-3xl" type="text" name="code" placeholder="Barcode" id="barcode_id">
+            </div>
+            <div class=" flex align-middle h-full w-full  justify-evenly mt-4">
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_create" id="barcode_create" title="create new data from data base">
+                    Create
+                </button>
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white"  name="barcode_read" id="barcode_read" title="search existing data from data base">
+                    Read
+                </button>
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_update" id="barcode_update" title="update existing data from data base">
+                    Update
+                </button>
+                <button class="border-2 border-blue-900 bg-blue-400 rounded-lg px-10 py-2 shadow-2xl hover:bg-white" type="submit" name="barcode_delete" title="delete existing data from data base">
+                    Delete
+                </button>
+            </div>
+        </div>
+        <!-- data table -->
+        <div class="flex justify-evenly py-5 w-full">
+            <!-- left detail -->
+            <div class="container px-3 py-3 w-full mx-10">
+                <div>
+                    <p>Item name:</p>
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg " type="text" name="item_name" id="item_name" placeholder="Input">
+                </div>
+                <div>
+                    <p>Brand Name:</p>
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg" type="text" name="brand_name" id="brand_name" placeholder="Input">
+                </div>
+                <div>
+                    <p>Part No.:</p>
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg" type="text" name="part_no" id="part_no" placeholder="Input">
+                </div>
+                <div>
+                    <p>Serial No.:</p>
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg" type="text" name="serila_no" id="serila_no" placeholder="Input">
+                </div>
+                <div>
+                    <p>Description:</p>
+                    <input class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg" type="text" name="description" id="description" placeholder="Input">
+                </div>
+                <div>
+                    <p>Remarks:</p>
+                    <textarea class="border-2 border-gray-400 w-full rounded-lg px-3 py-2 mx-10 shadow-lg" type="text" name="remarks" id="remarks" placeholder="Input" cols="50" rows="10"></textarea>
+                </div>
+            </div>
+            <!-- rigth picture -->
+            <div class="container px-3 py-3 w-full mx-10">
+                <p>Picture:</p>
+                <img class="border-2 border-gray-400 px-3 py-2  w-full h-3/4 " id="prod_pic">
+                </img>
+                <div class="px-3 py-3  flex w-full">
+                    <input class="text-2xl rounded-lg px-10 py-2 " type="file" name="pic" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+window.addEventListener('load', function() {
+    document.querySelector('input[type="file"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            var img = document.getElementById('prod_pic');
+            img.onload = () => {
+                URL.revokeObjectURL(img.src); // no longer needed, free memory
+            }
+
+            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+        }
+    });
+});
+</script>
+ <script src="{{url_for('static',filename='js_scrip/api_ajax.js')}}"></script>
+ <script src="{{url_for('static',filename='js_scrip/jquery-3.6.0.js')}}"></script>
+ <script type=text/javascript>  $SCRIPT_ROOT = {{ request.script_root|tojson }};</script>
+ <script type=text/javascript>
+  $(function() {
+    $('a#calculate').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+<h1>jQuery Example</h1>
+<p><input type=text size=5 name=a> +
+   <input type=text size=5 name=b> =
+   <span id=result>?</span>
+<p><a href=# id=calculate>calculate server side</a>
+
+{% endblock %}

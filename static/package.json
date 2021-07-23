@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "xmlhttprequest": "^1.8.0"
   }
 }
