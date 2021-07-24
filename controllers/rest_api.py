@@ -45,7 +45,7 @@ class User_Db(Resource):
 				            'user_id': j.user_id
 						}
 					barcode_list.append(barcode_data_dic)
-			data_dic["6.barcode_data"] = barcode_list
+			data_dic["6.barcode_user_created"] = barcode_list
 			barcode_list=[]
 			user_list.append(data_dic)
 		return jsonify(user_list)
@@ -59,8 +59,8 @@ api.add_resource(User_Db, "/api")
 
 
 
-# barcode_data = reqparse.RequestParser()
-# barcode_data.add_argument("barcode_id", type=str,)
+barcode_data = reqparse.RequestParser()
+barcode_data.add_argument("cake", type=str, location="args")
 # barcode_data.add_argument("item_name", type=str,)
 # barcode_data.add_argument("brand_name", type=str,)
 # barcode_data.add_argument("part_no", type=str,)
@@ -72,8 +72,25 @@ api.add_resource(User_Db, "/api")
 bar = {}
 class Barcode_Db(Resource):
 	def get(self,pri_key):
-		barcode_id =request.get_json()
-		return barcode_id
+		args = barcode_data.parse_args()
+		barcode_data1 = Barcode_table.query.filter_by(barcode_id=args["cake"]).first()
+		barcode_data_dic={
+			            'id': barcode_data1.id,
+	            'barcode_id': barcode_data1.barcode_id, 
+	            'item_name': barcode_data1.item_name,
+	            'brand_name': barcode_data1.brand_name,
+	            'part_no': barcode_data1.part_no,
+	            'serila_no': barcode_data1.serila_no,
+	            'description': barcode_data1.description,
+	            'remarks': barcode_data1.remarks,
+	            'prod_pic': barcode_data1.prod_pic,
+	            'mimetype_db': barcode_data1.mimetype_db,
+	            # 'date_added': barcode_data1.date_added,
+	            'user_id': barcode_data1.user_id
+	            }
+		return barcode_data_dic
+
+
 
 	def put(self,pri_key):
 		args = request.get_json()	

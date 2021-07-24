@@ -3,20 +3,18 @@ $(document).ready(function() {
     $('#barcode_read').on('click', function() {
 
         let url_ko = 'http://127.0.0.1:5000/api_barcode/tamina';
-        data_2 = $('input[name="barcode_id"]').serializeJSON();
+        data_2 = $("#barcode_id").serializeJSON();
+        console.log(data_2)
         const settings = {
                 url: url_ko,
-                dataType:"json",
-                 data : JSON.stringify(data_2),
+                // dataType:"headers",
+                 data :data_2,
                 method: "GET",
-                headers: {
-                    "x-api-key": "API_KEY",
-                    "Content-type": "application/json"
-                }
                 
             };
     $.ajax(settings).done(function (response) {
         console.log(response);
+        
         });
 
     });
