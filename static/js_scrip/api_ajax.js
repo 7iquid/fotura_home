@@ -8,13 +8,25 @@ $(document).ready(function() {
         const settings = {
                 url: url_ko,
                 // dataType:"headers",
-                 data :data_2,
+                 data :{"cake":data_2.barcode_id},
                 method: "GET",
                 
             };
     $.ajax(settings).done(function (response) {
         console.log(response);
-        
+        $("#item_name").val(response.item_name);
+
+        // alert("good");
+        // Object.entries(response).forEach(([k, v], i) => console.log(i, k, v))
+        var key = "#";
+        Object.entries(response).forEach(([k, v], i)=> $("#"+k).val(v));
+            // let value = v;
+
+            
+            // console.log(i, k, v))
+
+
+        // console.log(response.item_name);
         });
 
     });
@@ -35,6 +47,7 @@ $(document).ready(function() {
             };
     $.ajax(settings).done(function (response) {
         console.log(response);
+    
         });
 
     });

@@ -72,9 +72,14 @@ barcode_data.add_argument("cake", type=str, location="args")
 bar = {}
 class Barcode_Db(Resource):
 	def get(self,pri_key):
+		print(request.values)
+
 		args = barcode_data.parse_args()
+		# print("1================>",args['cake'])
 		barcode_data1 = Barcode_table.query.filter_by(barcode_id=args["cake"]).first()
-		barcode_data_dic={
+		# print("2======================>",barcode_data1)
+		if barcode_data1:
+			barcode_data_dic={
 			            'id': barcode_data1.id,
 	            'barcode_id': barcode_data1.barcode_id, 
 	            'item_name': barcode_data1.item_name,
@@ -88,8 +93,10 @@ class Barcode_Db(Resource):
 	            # 'date_added': barcode_data1.date_added,
 	            'user_id': barcode_data1.user_id
 	            }
-		return barcode_data_dic
-
+			return barcode_data_dic,200
+		else:
+			barcode_data_dic={"error": "not found"}
+			return barcode_data_dic
 
 
 	def put(self,pri_key):
