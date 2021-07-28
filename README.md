@@ -20,7 +20,7 @@ python app.py
 
 <div class="flex justify-evenly">
     <img src="Resources/image/image02.JPG" alt="image01" width="40%">
-    <img src="Resources/image/image02.JPG" alt="image01" width="40%">
+    <img src="Resources/image/image03.JPG" alt="image01" width="40%">
 </div>
 
 # Create a Login Account
