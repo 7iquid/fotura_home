@@ -13,12 +13,15 @@ python app.py
 
 # How to use
 
-<img src="Resources/image/image01.JPG" alt="image01" width="40%">
+<img src="Resources/image/image01.JPG" alt="image01" width="80%">
 
 `press API button for the user and barcode database`
 
 
-<img src="Resources/image/image02.JPG" alt="image01" width="40%">
+<div class="flex justify-evenly">
+    <img src="Resources/image/image02.JPG" alt="image01" width="40%">
+    <img src="Resources/image/image02.JPG" alt="image01" width="40%">
+</div>
 
 # Create a Login Account
 
