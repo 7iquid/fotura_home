@@ -1,16 +1,25 @@
 # flask-crud 
+this project is design for barcode database
 
 
-
-
-cd flask-crud 
+## cd flask-crud 
 
 pip install -r requirements.txt
 
 python app.py
 
 
-#thanks to sir @jj for the support
+## thanks to sir @jj for the support
+
+# How to user
+
+<img src="Resources/image/image01.jpg" alt="image01" width="40%">
+
+press API button for the user and barcode database
+
+
+<img src="Resources/image/image01.jpg" alt="image01" width="40%">
+
 
 
 
