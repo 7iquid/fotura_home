@@ -11,15 +11,16 @@ python app.py
 
 ## thanks to sir @jj for the support
 
-# How to user
+# How to use
 
-<img src="Resources/image/image01.jpg" alt="image01" width="40%">
+<img src="Resources/image/image01.JPG" alt="image01" width="40%">
 
-press API button for the user and barcode database
+`press API button for the user and barcode database`
 
 
-<img src="Resources/image/image01.jpg" alt="image01" width="40%">
+<img src="Resources/image/image02.JPG" alt="image01" width="40%">
 
+# Create a Login Account
 
 
 
