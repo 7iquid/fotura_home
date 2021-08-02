@@ -4,3 +4,6 @@ flask-bcrypt
 Flask-Migrate
 jyserver
 flask_restful
+flask_login
+pymongo
+dnspython

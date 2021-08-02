@@ -11,6 +11,7 @@ DEBUG = True
 
 # Connect to the database
 SQLALCHEMY_DATABASE_URI = 'sqlite:///barcodeDb.sqlite3'
+MONGO_URI = "mongodb+srv://7iquid:2222222@cluster0.jvx0i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"						
 
 # Turn off the Flask-SQLAlchemy event system and warning
 SQLALCHEMY_TRACK_MODIFICATIONS = False

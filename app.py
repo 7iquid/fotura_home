@@ -1,6 +1,7 @@
 from flask import Flask, Blueprint, Response, request, jsonify,render_template, session
 from flask_migrate import Migrate
 from models.Baracode_user_DB import db
+from models.Baracode_user_DB import db_mongo
 
 #blueprint
 from templates.Barcode_sys.back_end import barcode_nav
@@ -30,6 +31,7 @@ def load_user(id):
 
 #data base model=====>
 db.init_app(app)
+db_mongo.init_app(app)
 migrate = Migrate(app, db)
 #====<
 
