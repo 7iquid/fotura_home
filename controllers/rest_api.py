@@ -51,6 +51,7 @@ class User_Db(Resource):
 			data_dic["6.barcode_user_created"] = barcode_list
 			barcode_list=[]
 			user_list.append(data_dic)
+		print(type(user_list),"============>",user_list)
 		return jsonify(user_list)
 api.add_resource(User_Db, "/api")
 
@@ -144,10 +145,11 @@ api.add_resource(Barcode_Db, "/api_barcode/<pri_key>")
 
 class Mongo_db(Resource):
 	def get(self,pri_key):
-		print(db_mongo)
-		mongo_rep = db_mongo
-		print()
-		return mongo_rep
+		cursor = db_mongo.db.users.find({"name":pri_key})
+		for a,i in enumerate(cursor):
+			i.pop("_id") #remove _id object cannot jsonify
+		return jsonify(i)
+	
 
 	def put(self,pri_key):
 		pass
