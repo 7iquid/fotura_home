@@ -145,10 +145,19 @@ api.add_resource(Barcode_Db, "/api_barcode/<pri_key>")
 
 class Mongo_db(Resource):
 	def get(self,pri_key):
-		cursor = db_mongo.db.users.find({"name":pri_key})
-		for a,i in enumerate(cursor):
-			i.pop("_id") #remove _id object cannot jsonify
-		return jsonify(i)
+		if pri_key == "all-data":
+			cursor = db_mongo.db.users.find()
+			list_ko2 = []
+			for a,i in enumerate(cursor):
+				i.pop("_id") #remove _id object cannot jsonify
+				list_ko2.append(i)
+			return jsonify(i)
+		
+		else:	
+			cursor = db_mongo.db.users.find({"name":pri_key})
+			for a,i in enumerate(cursor):
+				i.pop("_id") #remove _id object cannot jsonify
+			return jsonify(i)
 	
 
 	def put(self,pri_key):
