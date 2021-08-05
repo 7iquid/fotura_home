@@ -1,8 +1,10 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from flask_login import UserMixin
+from flask_pymongo import PyMongo 
 
 db = SQLAlchemy()
+db_mongo = PyMongo()
 
 class User_activity(db.Model):
     __tablename__ = 'User_activity'  

@@ -4,6 +4,7 @@ from flask_login import login_required, current_user
 from models.Baracode_user_DB import Barcode_table
 from models.Baracode_user_DB import User
 from models.Baracode_user_DB import db
+from models.Baracode_user_DB import db_mongo
 import base64
 import json
 import time
@@ -12,6 +13,8 @@ import time
 api_ko = Blueprint('api_ko', __name__)
 
 api= Api(api_ko)
+
+
 class User_Db(Resource):
 	def get(self):
 		data_dic = {}
@@ -48,6 +51,7 @@ class User_Db(Resource):
 			data_dic["6.barcode_user_created"] = barcode_list
 			barcode_list=[]
 			user_list.append(data_dic)
+		print(type(user_list),"============>",user_list)
 		return jsonify(user_list)
 api.add_resource(User_Db, "/api")
 
@@ -72,11 +76,16 @@ barcode_data.add_argument("cake", type=str, location="args")
 bar = {}
 class Barcode_Db(Resource):
 	def get(self,pri_key):
+		if pri_key == "all-data":
+			check_ko = print_all_barCode()
+			return check_ko
+
 		print(request.values)
 
 		args = barcode_data.parse_args()
 		# print("1================>",args['cake'])
 		barcode_data1 = Barcode_table.query.filter_by(barcode_id=args["cake"]).first()
+	
 		# print("2======================>",barcode_data1)
 		if barcode_data1:
 			barcode_data_dic={
@@ -107,8 +116,44 @@ class Barcode_Db(Resource):
 		db.session.commit()
 		return args
 
+def print_all_barCode():
+	barcode_data = Barcode_table.query.all()
+	barcode_list=[]
+	for j in barcode_data:
+		barcode_data_dic={
+		        'id': j.id,
+		'barcode_id': j.barcode_id, 
+		'item_name': j.item_name,
+		'brand_name': j.brand_name,
+		'part_no': j.part_no,
+		'serila_no': j.serila_no,
+		'description': j.description,
+		'remarks': j.remarks,
+		'prod_pic': j.prod_pic,
+		'mimetype_db': j.mimetype_db,
+		'date_added': j.date_added,
+		'user_id': j.user_id
+		}
+		barcode_list.append(barcode_data_dic)
+	return jsonify(barcode_list)
+
+
 # api.add_resource(Barcode_Db, "/api_barcode/<string:query_key>/<string:query_value>")
 api.add_resource(Barcode_Db, "/api_barcode/<pri_key>")
+
+
+
+class Mongo_db(Resource):
+	def get(self,pri_key):
+		cursor = db_mongo.db.users.find({"name":pri_key})
+		for a,i in enumerate(cursor):
+			i.pop("_id") #remove _id object cannot jsonify
+		return jsonify(i)
+	
+
+	def put(self,pri_key):
+		pass
+api.add_resource(Mongo_db, "/api_mongo/<pri_key>")
 
 
 
