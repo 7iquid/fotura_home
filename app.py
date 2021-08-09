@@ -3,6 +3,7 @@ from flask_migrate import Migrate
 from models.Baracode_user_DB import db
 from models.Baracode_user_DB import db_mongo
 
+
 #blueprint
 from templates.Barcode_sys.back_end import barcode_nav
 from routes.user_bp import user_bp
