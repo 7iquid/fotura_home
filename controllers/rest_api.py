@@ -151,7 +151,7 @@ class Mongo_db(Resource):
 			for a,i in enumerate(cursor):
 				i.pop("_id") #remove _id object cannot jsonify
 				list_ko2.append(i)
-			return jsonify(i)
+			return jsonify(list_ko2)
 		
 		else:	
 			cursor = db_mongo.db.users.find({"name":pri_key})
